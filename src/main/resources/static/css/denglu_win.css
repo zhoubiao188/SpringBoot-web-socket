@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #ebe5e5;
+}
+
+header .logo_box {
+  width: 200px;
+  height: 100px;
+  background: url(../images/logo.gif);
+  position: absolute;
+  z-index: 5;
+  left: 5%;
+  top: 5%;
+}
+
+@media only screen and (max-width: 1495px) {
+  header .logo_box {
+    left: 70px;
+  }
+}
+.box {
+  position: absolute;
+  width: 100%;
+  min-width: 1300px;
+  height: 700px;
+}
+.box .denglu_win_beijing {
+  height: 100%;
+  min-height: 70%;
+  width: 100%;
+  min-width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+}
+.box .denglu_win_beijing .img_box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 0.8s, transform 2s;
+  filter: brightness(0.9);
+}
+.box .denglu_win_beijing .img_box img {
+  width: 100%;
+  height: 100%;
+  transition: transform 2s;
+}
+.box .denglu_win_beijing .img_box:hover {
+  transform: scale(1.1);
+}
+.box .denglu_win_beijing .img_box:nth-child(1) {
+  z-index: 4;
+}
+.box .denglu_win_beijing .img_box:nth-child(2) {
+  z-index: 3;
+}
+.box .denglu_win_beijing .img_box:nth-child(3) {
+  z-index: 2;
+}
+.box .denglu_win_beijing .img_box:nth-child(4) {
+  z-index: 1;
+}
+.box .denglu_box {
+  position: absolute;
+  width: 352px;
+  height: 380px;
+  background-color: white;
+  z-index: 5;
+  right: 10%;
+  top: 20%;
+}
+.box .denglu_box .denglu_box_header {
+  width: 100%;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.box .denglu_box .denglu_box_input {
+  width: 100%;
+  height: 150px;
+}
+.box .denglu_box .denglu_box_input .users {
+  width: 100%;
+  height: 70px;
+}
+.box .denglu_box .denglu_box_input .users input[type=text] {
+  width: 90%;
+  height: 50px;
+  margin-left: 5%;
+}
+.box .denglu_box .denglu_box_input .users p {
+  margin-left: 5%;
+  color: white;
+}
+.box .denglu_box .denglu_box_input .passwords {
+  width: 100%;
+  height: 70px;
+}
+.box .denglu_box .denglu_box_input .passwords input[type=password] {
+  width: 90%;
+  height: 50px;
+  margin-left: 5%;
+}
+.box .denglu_box .denglu_box_input .passwords p {
+  margin-left: 5%;
+  color: white;
+}
+.box .denglu_box .denglu_box_btn {
+  width: 100%;
+  height: 60px;
+}
+.box .denglu_box .denglu_box_btn input[type=button] {
+  width: 90%;
+  height: 90%;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5%;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 5%;
+  cursor: pointer;
+  background-color: #0c98e9;
+}
+.box .denglu_box .denglu_box_btn input[type=button]:hover {
+  filter: brightness(1.1);
+}
+.box .denglu_box .denglu_box_footer {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #c7def1;
+}
+.box .denglu_box .denglu_box_footer a {
+  text-decoration: none;
+  color: #1960e4;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+.box .denglu_box .denglu_box_footer a:hover {
+  filter: brightness(1.2);
+}
+
+footer .footer_box {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  top: 730px;
+}
+footer .footer_box .ul_img_box {
+  width: 1000px;
+  height: 80%;
+  position: absolute;
+  left: 22%;
+}
+footer .footer_box .ul_img_box ul {
+  padding: 0px;
+  position: absolute;
+  left: 125px;
+  list-style: none;
+}
+footer .footer_box .ul_img_box ul li {
+  width: 90px;
+  height: 70px;
+  margin: 0 30px;
+  display: block;
+  float: left;
+}
+footer .footer_box .ul_img_box ul li:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+footer .footer_box .ul_img_box ul li:nth-child(1) {
+  background: url(../images/login_box.png);
+  background-position: -500px -71px;
+}
+footer .footer_box .ul_img_box ul li:nth-child(2) {
+  background: url(../images/login_box.png);
+  background-position: -320px 0;
+}
+footer .footer_box .ul_img_box ul li:nth-child(3) {
+  background: url(../images/login_box.png);
+  background-position: -267px -161px;
+}
+footer .footer_box .ul_img_box ul li:nth-child(4) {
+  background: url(../images/login_box.png);
+  background-position: -500px 0;
+}
+footer .footer_box .ul_img_box ul li:nth-child(5) {
+  background: url(../images/login_box.png);
+  background-position: -182px -161px;
+}
+
+@media only screen and (max-width: 1495px) {
+  .box {
+    height: 550px;
+  }
+  .box .denglu_box {
+    right: 5%;
+  }
+
+  footer .footer_box {
+    top: 580px;
+  }
+  footer .footer_box .ul_img_box {
+    width: 800px;
+    left: 300px;
+  }
+  footer .footer_box .ul_img_box ul {
+    left: 25px;
+  }
+}
+
+/*# sourceMappingURL=denglu_win.css.map */

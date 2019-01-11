@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>青鸟聊天室</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/nomalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/Home.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="user_xinxi">
+                <div class="img">
+                    <img th:src="${session.SPRING_SECURITY_CONTEXT.authentication.principal.headimg}" alt="头像" />
+                </div>
+                <div class="user_name">
+                    <span th:text="''+${session.SPRING_SECURITY_CONTEXT.authentication.principal.nickname}"></span>
+                </div>
+            </div>
+            <div class="change_user">
+                <button>切换账号</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="ys_change_user">
+            <h1>是否切换账号?</h1>
+            <button>确定</button>
+            <button>取消</button>
+        </div>
+    </section>
+
+    <form id="chat-form">
+
+      <section>
+        <div class="background_box">
+            <div class="beijing">
+                <img src="/images/aoi.jpg" />
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="use_introduction">
+            <div class="logo_box">
+                <img src="/images/home_logo.gif" alt="logo" />
+            </div>
+            <div class="introduction">
+                <span>基于WebSocke在线聊天室</span>
+                <hr />
+                <p>使用说明</p>
+            </div>
+            <div class="intro_ul">
+                <ol>
+                    <li>注册获取几个用户账号</li>
+                    <li>浏览器开几个窗口分别登录</li>
+                    <li>能单独发送消息给输入的接收者</li>
+                    <li>不输入接收者姓名会广播发送消息</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="message_window_box">
+            <div class="tochatwith_window">
+                <p id="receive"Home.css></p>
+            </div>
+            <div class="post_message_window">
+                <textarea class="message" name="text"></textarea>
+
+                <div class="post_messages_obj_input">
+                    <input type="text"  id="btn1" name="receiver" placeholder="接收者用户名">
+                </div>
+                <div class="post_message_btn">
+                    <button type="submit">发送</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  </form>
+</body>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/sockjs.min.js"></script>
+<script src="/js/stomp.min.js"></script>
+<script src="/js/home.js"></script>
+
+<script src="/js/deprecate-index.js"></script>
+
+
+</html>

@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header .header {
+  width: 100%;
+  height: 7%;
+  max-height: 77px;
+  max-width: 2100px;
+  min-height: 65px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0.1px 0.5px 4px black;
+  background: linear-gradient(to right, #3180f7, #98bff1);
+}
+header .header .user_xinxi {
+  width: 720px;
+  height: 95%;
+  position: absolute;
+  top: 2%;
+  right: 180px;
+}
+header .header .user_xinxi .img {
+  width: 65px;
+  height: 55px;
+  position: absolute;
+  left: 395px;
+  top: 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+header .header .user_xinxi .img img{
+  border-radius: 50%;
+   width:95%;
+  height: 95%;
+}
+header .header .user_xinxi .img:hover {
+  filter: brightness(1.3);
+}
+header .header .user_xinxi .user_name {
+  width: 210px;
+  height: 55px;
+  position: absolute;
+  font-size: 1.2rem;
+  left: 470px;
+  top: 2px;
+  color: black;
+  line-height: 5rem;
+}
+header .header .change_user {
+  width: 200px;
+  height: 95%;
+  position: absolute;
+  right: 10px;
+  top: 2%;
+  font-weight: bold;
+}
+header .header .change_user button:nth-child(1) {
+  width: 100px;
+  height: 80%;
+  font-size: 1.2rem;
+  color: red;
+  cursor: pointer;
+  margin-top: 8%;
+  border: 0;
+  outline: none;
+  float: left;
+  background-color: transparent;
+  transition: font-size 0.5s;
+}
+header .header .change_user button:nth-child(2) {
+  width: 100px;
+  color: red;
+  height: 80%;
+  font-size: 1.2rem;
+  margin-top: 8%;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  transition: font-size 0.5s;
+}
+header .header .change_user button:nth-child(1):hover {
+  font-size: 1.4rem;
+}
+header .header .change_user button:nth-child(2):hover {
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 1350px) {
+  header .header {
+    width: 1087px;
+    left: 300px;
+  }
+  header .header .change_user {
+    right: 30px;
+  }
+}
+section .background_box {
+  width: 100%;
+  max-height: 1121px;
+  height: 100%;
+  max-width: 2100px;
+  min-height: 910px;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+section .background_box .beijing {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+section .background_box .beijing img {
+  height: 110%;
+  width: 2100px;
+  transition: all 2s;
+}
+section .background_box .beijing img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1350px) {
+  section .background_box {
+    width: 1388px;
+  }
+}
+section .use_introduction {
+  width: 20%;
+  height: 100%;
+  min-width: 290px;
+  min-height: 910px;
+  max-width: 414px;
+  max-height: 1121px;
+  position: absolute;
+  box-shadow: 1px 0 1px #9c9999;
+  background: linear-gradient(to bottom, #4d93fc, #a7caf8);
+  z-index: 2;
+}
+section .use_introduction .logo_box {
+  overflow: hidden;
+  width: 160px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+  top: 1%;
+  left: 29%;
+}
+section .use_introduction .introduction {
+  width: 80%;
+  height: 130px;
+  position: absolute;
+  text-align: center;
+  top: 19%;
+  left: 8%;
+}
+section .use_introduction .introduction span {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+section .use_introduction .introduction hr {
+  margin-top: 30px;
+  color: #2610eb;
+  height: 2px;
+}
+section .use_introduction .introduction p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #242020;
+  font-weight: bold;
+  margin-top: 30px;
+}
+section .use_introduction .intro_ul {
+  width: 70%;
+  height: 500px;
+  position: absolute;
+  top: 320px;
+  left: 15%;
+}
+section .use_introduction .intro_ul ol {
+  position: absolute;
+  left: 10%;
+  top: 1%;
+}
+section .use_introduction .intro_ul ol li + li {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: black;
+}
+
+@media only screen and (max-width: 1860px) {
+  section .use_introduction .introduction {
+    width: 299px;
+  }
+}
+@media only screen and (min-height: 1050px) {
+  section .use_introduction .intro_ul {
+    top: 30%;
+  }
+}
+@media only screen and (max-width: 1740px) {
+  section .use_introduction .introduction {
+    left: 5%;
+  }
+}
+@media only screen and (max-width: 1705px) {
+  section .use_introduction .introduction {
+    width: 270px;
+  }
+  section .use_introduction .introduction span {
+    font-size: 1.2rem;
+    left: 6%;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  section .use_introduction {
+    width: 300px;
+    left: 0;
+  }
+  section .use_introduction .logo_box {
+    left: 24%;
+  }
+}
+section .ys_change_user {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -410px;
+  left: 43%;
+  box-shadow: 0 0 5px black;
+  background: linear-gradient(to bottom, #a7caf8, #4d93fc);
+  z-index: 5;
+  transition: top 1s;
+  opacity: 1;
+}
+section .ys_change_user h1 {
+  text-align: center;
+}
+section .ys_change_user button:nth-child(2) {
+  width: 100px;
+  height: 50px;
+  margin-top: 55%;
+  margin-left: 10%;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #a7caf8, #4d93fc);
+}
+section .ys_change_user button:nth-child(3) {
+  width: 100px;
+  height: 50px;
+  margin-top: 55%;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 30%;
+  background: linear-gradient(to bottom, #a7caf8, #4d93fc);
+}
+
+section .message_window_box {
+  width: 55%;
+  height: 80%;
+  min-height: 751px;
+  max-height: 800px;
+  max-width: 1090px;
+  position: absolute;
+  border: 15px dotted #17bfe9;
+  right: 11%;
+  top: 100px;
+}
+section .message_window_box .tochatwith_window {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  background-color: rgba(250, 246, 246, 0.7);
+  border-bottom: 5px ridge white;
+  overflow: auto;
+}
+section .message_window_box .post_message_window {
+  width: 100%;
+  height: 29%;
+  position: absolute;
+  border-top: 5px ridge white;
+  background-color: rgba(250, 246, 246, 0.7);
+  top: 70%;
+  overflow: hidden;
+}
+section .message_window_box .post_message_window .post_messages_obj_input {
+  width: 300px;
+  height: 43px;
+  position: absolute;
+  right: 20px;
+  top: 158px;
+}
+section .message_window_box .post_message_window .post_messages_obj_input input[type=text] {
+  width: 200px;
+  height: 100%;
+  border: 1px solid #cad2d3;
+  font-size: 1.2rem;
+}
+section .message_window_box .post_message_window textarea {
+  width: 98%;
+  height: 65%;
+  border: 0;
+  background: rgba(250, 246, 246, 0);
+  outline: none;
+  overflow: auto;
+  font-size: 1.2rem;
+  color: black;
+  margin-left: 1%;
+  margin-top: 1%;
+  resize: none;
+}
+
+section .message_window_box .post_message_window .post_message_btn {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 160px;
+  right: 30px;
+  z-index: 2;
+}
+
+section .message_window_box .post_message_window .post_message_btn button {
+  cursor: pointer;
+  box-shadow: 0 0 2px black;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: none;
+  background: linear-gradient(to right, #a7caf8, #4d93fc);
+}
+
+section .message_window_box .post_message_window .post_message_btn button:hover {
+  filter: brightness(1.1);
+}
+
+@media only screen and (min-width: 2100px) {
+  section .message_window_box {
+    left: 750px !important;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .message_window_box {
+    width: 900px !important;
+    left: 375px;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

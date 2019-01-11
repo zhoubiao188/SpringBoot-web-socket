@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding:0;
+}
+// body{
+//     background:url(../images/aoi.jpg);
+//     transition: all 1s;
+// }
+// body:hover{
+//     transform: scale(1.3);
+// }
+
+header{
+    .header{
+        width:80%;
+        height:7%;
+        min-height: 65px;
+        position: absolute;
+        z-index: 1;
+        right:1px;
+        box-shadow:0.1px 0.5px 4px black;
+        background:linear-gradient(to right,rgb(49, 128, 247),rgb(152, 191, 241));
+        .user_xinxi{
+            width:720px;
+            height:95%;
+            position: absolute;
+            top:2%;
+            right:145px;
+            .img{
+                width:65px;
+                height:55px;
+                border-radius: 50%;
+                position: absolute;
+                left:395px;
+                top:2px;
+                cursor:pointer;
+                overflow: hidden;
+            }
+            .img:hover{
+                filter:brightness(1.3)
+            }
+            .user_name{
+                width:210px;
+                height:55px;
+                position:absolute;
+                font-size: 1.2rem;
+                left:470px;
+                top:2px;
+                color:black;
+                line-height: 5rem;
+            }
+        }
+        .change_user{
+            width:130px;
+            height:95%;
+            position:absolute;
+            right:10px;
+            top:2%;
+            button{
+                width:100px;
+                height:80%;
+                font-size:1.2rem;
+                cursor:pointer;
+                color:black;
+                margin-top:12%;
+                border:0;
+                outline:none;
+                background-color:transparent;
+                transition: font-size 0.5s;
+            }
+            button:hover{
+                font-size:1.4rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1350px){
+    header{
+        .header{
+            width:1087px;
+            left:300px;
+            .change_user{
+                right:30px;
+            }
+        }
+    }
+}
+
+section{
+    .background_box{
+        width:100%;
+        height:100%;
+        position:absolute;
+        z-index: 0;
+        overflow: hidden;
+        .beijing{
+            width:100%;
+            height: 100%;
+            position: absolute;
+            z-index: 0;
+            background:url(../images/aoi.jpg);
+            transition: transform 2s;
+        }
+        .beijing:hover{
+            transform:scale(1.2);
+        }
+    }
+    
+}
+
+@media only screen and (max-width:1350px){
+    section{
+        .background_box{
+            width:1388px;
+        }
+    }
+}
+
+section{
+    .use_introduction{
+        width:20%;
+        height:100%;
+        min-width:290px;
+        min-height:910px;
+        position: absolute;
+        box-shadow:1px 0 1px rgb(156, 153, 153);
+        background:linear-gradient(to bottom,rgb(77, 147, 252),rgb(167, 202, 248));
+        z-index: 2;
+        .logo_box{
+            overflow: hidden;
+            width:160px;
+            height:150px;
+            position:absolute;
+            border-radius: 50%;
+            top:1%;
+            left:25%;
+        }
+        .introduction{
+            width:80%;
+            height:130px;
+            position:absolute;
+            text-align: center;
+            top:19%;
+            left:8%;
+            span{
+                font-size:1.5rem;
+                text-align: center;
+                font-weight: bold;
+            }
+            hr{
+                margin-top:30px;
+                color:rgb(38, 16, 235);
+                height: 2px;
+            }
+            p{
+                text-align: center;
+                font-size:1.3rem;
+                color:rgb(36, 32, 32);
+                font-weight: bold;
+                margin-top:30px;
+            }
+        }
+        .intro_ul{
+            width:70%;
+            height:500px;
+            position: absolute;
+            top:320px;
+            left:15%;
+            ol{
+                position:absolute;
+                left:10%;
+                top:1%;
+                li+li{
+                    margin-top:20px;
+                    font-size: 1rem;
+                    color:black;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1860px){
+    section{
+        .use_introduction{
+            .introduction{
+                width:299px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1740px){
+    section{
+        .use_introduction{
+            .introduction{
+                left:5%;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1705px){
+    section{
+        .use_introduction{
+            .introduction{
+                width:270px;
+                span{
+                    font-size:1.2rem;
+                    left:6%;
+                    font-weight: bold;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1350px){
+    section{
+        .use_introduction{
+            width:300px;
+            left:0;
+            .logo_box{
+                left:24%;
+            }
+        }
+    }
+}
+
+section{
+    .message_window_box{
+        width:55%;
+        height:80%;
+        min-height: 590px;
+        position: absolute;
+        border:7px ridge white;
+        // background-color:rgba(255, 255, 255, 0.7);
+        right:11%;
+        top:100px;
+        .tochatwith_window{
+            width:100%;
+            height:70%;
+            position:absolute;
+            background-color:rgba(250, 246, 246,0.7);
+            border-bottom:5px ridge white;
+            border-left:1px solid red;
+            border-right:1px solid red;
+        }
+        .post_message_window{
+            width:100%;
+            height:30%;
+            position:absolute;
+            border-top:5px ridge white;
+            background-color:rgba(250, 246, 246,0.7);
+            top:70%;
+            overflow: hidden;
+            textarea{
+                width:98%;
+                height:65%;
+                border:0;
+                background:rgba(250, 246, 246,0);
+                outline:none;
+                overflow:auto;
+                font-size:1.2rem;
+                color:black;
+                margin-left:1%;
+                margin-top:1%;
+                resize: none;
+            }
+            .post_message_btn{
+                width:80px;
+                height:40px;
+                position:absolute;
+                top:160px;
+                right:30px;
+                button{
+                    cursor: pointer;
+                    box-shadow:0 0 2px black;
+                    width:100%;
+                    height:100%;
+                    border:0;
+                    outline:none;
+                    background:linear-gradient(to right,rgb(167, 202, 248),rgb(77, 147, 252));
+                }
+                button:hover{
+                    filter: brightness(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1350px){
+    .message_window_box{
+        width:900px!important;
+        left:375px;
+    }
+}
+
+// section{
+//     .post_message_window{
+//         width:55%;
+//         height:30%;
+//         min-height:280px;
+//         
+//         // background-color: orange;
+//         position: absolute;
+//         right:11%;
+//         top:70%;
+//     }
+// }
+
+// @media only screen and (max-width:1350px){
+//     .post_message_window{
+//         width:1087px!important;
+//         left:262.59px;
+//     }
+// }

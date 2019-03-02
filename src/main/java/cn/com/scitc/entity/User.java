@@ -28,7 +28,7 @@ public class User  implements Serializable, UserDetails {
     private String password; // 用户密码
 
     @Column(name = "user_type")
-    private int userType;  //用户头像
+    private int userType;  //用户类型
 
     private String headimg; //用户头像
 

@@ -8,4 +8,4 @@
 
 ### 聊天室页面
 ![Image text](https://note.youdao.com/yws/api/personal/file/WEBa78f23b65bd45de3152ab9e65a02bf48?method=download&shareKey=d8dbc8060ffd65d158a40abc32cde0b5)
-# 如果需要前端页面请到这个页面:https://github.com/potatopeople/web_socket-
+# 如果需要单独的前端页面请到这个页面获取:https://github.com/potatopeople/web_socket-
